@@ -1,0 +1,28 @@
+﻿<Window x:Class="BookSorterU16.Dialogs.OpenFileDialogSample"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="BookSorter" Height="147" Width="356">
+
+
+
+
+    <WrapPanel DockPanel.Dock="Top" Margin="11,10,9,10" RenderTransformOrigin="0.5,0.5">
+        <WrapPanel.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform/>
+                <SkewTransform AngleX="-0.783"/>
+                <RotateTransform Angle="-0.233"/>
+                <TranslateTransform X="-1.736"/>
+            </TransformGroup>
+        </WrapPanel.RenderTransform>
+        <Button x:Name="btnOpenFile" Click="btnOpenFile_Click" Width="120" Content=".csv file input" RenderTransformOrigin="0.474,2.512" Height="46"/>
+        <TextBox x:Name="source" TextWrapping="Wrap" Text="Input Source" Width="200" SelectionOpacity="1" IsReadOnly="True" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="1.278,5.168" Height="46"/>
+        <Button x:Name="output" Content=".json file output&#xD;&#xA;" Width="120" Height="47" Click="output_Click" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <TextBox x:Name="outputbox" TextWrapping="Wrap" Text="Output Source" Width="200" SelectionOpacity="1" IsReadOnly="True" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="1.278,5.168" Height="46"/>
+        
+    </WrapPanel>
+
+
+
+
+</Window>
